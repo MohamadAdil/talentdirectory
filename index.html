@@ -8,7 +8,9 @@
   <title>Talent Directory - Home</title>
   <meta name="description" content="">
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <!-- Bootstrap CSS  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
@@ -19,7 +21,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
   <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./images/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -61,114 +63,186 @@
       </div>
     </nav>
   </header>
+  <!--  -->
+  <section class="hero-banner" style="background-image: url(./images/banner.jpg);">
+    <div class="container">
+      <div class="text-wrap">
+        <h1>Discover the Best Talent</h1>
+        <p>Connect with a diverse network of professional models and actors from around the world. Find the perfect fit
+          for your next campaign, film, or show.</p>
+        <div class="btn-wrap">
+          <a href="#" class="btn-main">Join Our Community</a>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Actor Listing -->
   <section class="actors-listing-sc">
     <div class="container">
       <div class="hd-wrap d-flex align-items-center justify-content-between gap-2 flex-wrap mb-4">
-        <h2>Models We Have </h2>
-        <div class="d-flex align-items-center gap-4">
-          <div class="d-flex align-items-center">
-            Sort by:
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                New users first
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </div>
-          </div>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+        <div class="text-wrap">
+          <h2>Models We Have </h2>
+          <p>Discover our diverse talent pool</p>
         </div>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn-main" type="submit">Search</button>
+        </form>
       </div>
-      <div class="row g-5">
-        <div class="col-md-9">
-          <div class="actors-listing-wrap">
-            <div class="row">
-              <div class="col-md-3 mb-4">
-                <article class="actor-card">
+      <div class="row">
+        <!--  -->
+        <div class="col-lg-9 col-md-8">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-6 mb-4">
+              <article class="actor-card">
+                <a href="actor-profile.html">
                   <div class="actor-img">
-                    <a href="actor-profile.html" aria-label="View profile of Rammodel">
-                      <img src="./images/actor-img.jpg" alt="Rammodel - German actor, 40 years old" loading="lazy">
-                      <ul class="actor-card-content">
-                        <li>40 years old</li>
-                        <li>Actors - Free Membership</li>
-                        <li>German</li>
-                        <li>France</li>
-                      </ul>
-                    </a>
+                    <img src="./images/actor-img1.png" alt="Rammodel - German actor, 40 years old" loading="lazy">
+                    <ul class="actor-card-content">
+                      <li><i class="fa-solid fa-user-clock"></i> 40 years old</li>
+                      <li><i class="fa-solid fa-users"></i> Actors - Free Membership</li>
+                      <li><i class="fa-solid fa-flag"></i> German</li>
+                      <li><i class="fa-solid fa-globe"></i> France</li>
+                    </ul>
                   </div>
-                  <h3 class="actor-name">
-                    <a href="actor-profile.html">Rammodel</a>
-                  </h3>
-                </article>
-              </div>
-              <div class="col-md-3 mb-4">
-                <article class="actor-card">
+                  <h3 class="actor-name">Dwayne Johnson</h3>
+                </a>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6 mb-4">
+              <article class="actor-card">
+                <a href="actor-profile.html">
                   <div class="actor-img">
-                    <a href="actor-profile.html" aria-label="View profile of Rammodel">
-                      <img src="./images/actor-img.jpg" alt="Rammodel - German actor, 40 years old" loading="lazy">
-                      <ul class="actor-card-content">
-                        <li>40 years old</li>
-                        <li>Actors - Free Membership</li>
-                        <li>German</li>
-                        <li>France</li>
-                      </ul>
-                    </a>
+                    <img src="./images/actor-img2.png" alt="Rammodel - German actor, 40 years old" loading="lazy">
+                    <ul class="actor-card-content">
+                      <li><i class="fa-solid fa-user-clock"></i> 40 years old</li>
+                      <li><i class="fa-solid fa-users"></i> Actors - Free Membership</li>
+                      <li><i class="fa-solid fa-flag"></i> German</li>
+                      <li><i class="fa-solid fa-globe"></i> France</li>
+                    </ul>
                   </div>
-                  <h3 class="actor-name">
-                    <a href="actor-profile.html">Rammodel</a>
-                  </h3>
-                </article>
-              </div>
-              <div class="col-md-3 mb-4">
-                <article class="actor-card">
+                  <h3 class="actor-name">Taylor Swift</h3>
+                </a>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6 mb-4">
+              <article class="actor-card">
+                <a href="actor-profile.html">
                   <div class="actor-img">
-                    <a href="actor-profile.html" aria-label="View profile of Rammodel">
-                      <img src="./images/actor-img.jpg" alt="Rammodel - German actor, 40 years old" loading="lazy">
-                      <ul class="actor-card-content">
-                        <li>40 years old</li>
-                        <li>Actors - Free Membership</li>
-                        <li>German</li>
-                        <li>France</li>
-                      </ul>
-                    </a>
+                    <img src="./images/actor-img4.png" alt="Rammodel - German actor, 40 years old" loading="lazy">
+                    <ul class="actor-card-content">
+                      <li><i class="fa-solid fa-user-clock"></i> 40 years old</li>
+                      <li><i class="fa-solid fa-users"></i> Actors - Free Membership</li>
+                      <li><i class="fa-solid fa-flag"></i> German</li>
+                      <li><i class="fa-solid fa-globe"></i> France</li>
+                    </ul>
                   </div>
-                  <h3 class="actor-name">
-                    <a href="actor-profile.html">Rammodel</a>
-                  </h3>
-                </article>
-              </div>
-              <div class="col-md-3 mb-4">
-                <article class="actor-card">
+                  <h3 class="actor-name">Priyanka Chopra Jonas</h3>
+                </a>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6 mb-4">
+              <article class="actor-card">
+                <a href="actor-profile.html">
                   <div class="actor-img">
-                    <a href="actor-profile.html" aria-label="View profile of Rammodel">
-                      <img src="./images/actor-img.jpg" alt="Rammodel - German actor, 40 years old" loading="lazy">
-                      <ul class="actor-card-content">
-                        <li>40 years old</li>
-                        <li>Actors - Free Membership</li>
-                        <li>German</li>
-                        <li>France</li>
-                      </ul>
-                    </a>
+                    <img src="./images/actor-img5.png" alt="Rammodel - German actor, 40 years old" loading="lazy">
+                    <ul class="actor-card-content">
+                      <li><i class="fa-solid fa-user-clock"></i> 40 years old</li>
+                      <li><i class="fa-solid fa-users"></i> Actors - Free Membership</li>
+                      <li><i class="fa-solid fa-flag"></i> German</li>
+                      <li><i class="fa-solid fa-globe"></i> France</li>
+                    </ul>
                   </div>
-                  <h3 class="actor-name">
-                    <a href="actor-profile.html">Rammodel</a>
-                  </h3>
-                </article>
-              </div>
+                  <h3 class="actor-name">Tom Holland</h3>
+                </a>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6 mb-4">
+              <article class="actor-card">
+                <a href="actor-profile.html">
+                  <div class="actor-img">
+                    <img src="./images/actor-img6.png" alt="Rammodel - German actor, 40 years old" loading="lazy">
+                    <ul class="actor-card-content">
+                      <li><i class="fa-solid fa-user-clock"></i> 40 years old</li>
+                      <li><i class="fa-solid fa-users"></i> Actors - Free Membership</li>
+                      <li><i class="fa-solid fa-flag"></i> German</li>
+                      <li><i class="fa-solid fa-globe"></i> France</li>
+                    </ul>
+                  </div>
+                  <h3 class="actor-name">Jennifer Lopez</h3>
+                </a>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6 mb-4">
+              <article class="actor-card">
+                <a href="actor-profile.html">
+                  <div class="actor-img">
+                    <img src="./images/actor-img7.png" alt="Rammodel - German actor, 40 years old" loading="lazy">
+                    <ul class="actor-card-content">
+                      <li><i class="fa-solid fa-user-clock"></i> 40 years old</li>
+                      <li><i class="fa-solid fa-users"></i> Actors - Free Membership</li>
+                      <li><i class="fa-solid fa-flag"></i> German</li>
+                      <li><i class="fa-solid fa-globe"></i> France</li>
+                    </ul>
+                  </div>
+                  <h3 class="actor-name">Shah Rukh Khan</h3>
+                </a>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6 mb-4">
+              <article class="actor-card">
+                <a href="actor-profile.html">
+                  <div class="actor-img">
+                    <img src="./images/actor-img8.png" alt="Rammodel - German actor, 40 years old" loading="lazy">
+                    <ul class="actor-card-content">
+                      <li><i class="fa-solid fa-user-clock"></i> 40 years old</li>
+                      <li><i class="fa-solid fa-users"></i> Actors - Free Membership</li>
+                      <li><i class="fa-solid fa-flag"></i> German</li>
+                      <li><i class="fa-solid fa-globe"></i> France</li>
+                    </ul>
+                  </div>
+                  <h3 class="actor-name">Selena Gomez</h3>
+                </a>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6 mb-4">
+              <article class="actor-card">
+                <a href="actor-profile.html">
+                  <div class="actor-img">
+                    <img src="./images/actor-img10.png" alt="Rammodel - German actor, 40 years old" loading="lazy">
+                    <ul class="actor-card-content">
+                      <li><i class="fa-solid fa-user-clock"></i> 40 years old</li>
+                      <li><i class="fa-solid fa-users"></i> Actors - Free Membership</li>
+                      <li><i class="fa-solid fa-flag"></i> German</li>
+                      <li><i class="fa-solid fa-globe"></i> France</li>
+                    </ul>
+                  </div>
+                  <h3 class="actor-name">Deepika Padukone</h3>
+                </a>
+              </article>
+            </div>
+             <div class="col-lg-4 col-md-4 col-6 mb-4">
+              <article class="actor-card">
+                <a href="actor-profile.html">
+                  <div class="actor-img">
+                    <img src="./images/actor-img9.webp" alt="Rammodel - German actor, 40 years old" loading="lazy">
+                    <ul class="actor-card-content">
+                      <li><i class="fa-solid fa-user-clock"></i> 40 years old</li>
+                      <li><i class="fa-solid fa-users"></i> Actors - Free Membership</li>
+                      <li><i class="fa-solid fa-flag"></i> German</li>
+                      <li><i class="fa-solid fa-globe"></i> France</li>
+                    </ul>
+                  </div>
+                  <h3 class="actor-name">Chris Hemsworth</h3>
+                </a>
+              </article>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="filter-sidebar">
-
+        <!--  -->
+        <div class="col-lg-3 col-md-4">
+          <div class="filter-sidebar sticky-column">
+            <h3>Filter By</h3>
             <!-- Sort -->
             <div class="mb-3">
               <label class="filter-label">Sort by:</label>
@@ -281,8 +355,10 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <h2>Information</h2>
-      <p>Int. Model & actors Agency Wilhelminasingel 127221 BJ Maastricht (NL)+31-43-3257869info@galucci.nl</p>
+      <div class="ft-logo">
+        <img src="./images/logo-white.svg" alt="Site Logo">
+      </div>
+      <p>Copyright © 2025 All Rights Reserved.</p>
     </div>
   </footer>
   <!-- Bootstrap JS Bundle (with Popper) -->
