@@ -6,7 +6,17 @@
   --font-family-p1: "Roboto", sans-serif;
 }
 
-[data-theme="dark"] {}
+[data-theme="dark"] {
+  --primary-clr: #f97316;
+  --black: #fff;
+  --white: #000;
+
+}
+
+:root,
+html[data-theme] {
+  transition: background-color 230ms ease, color 230ms ease;
+}
 
 * {
   box-sizing: border-box;
@@ -23,6 +33,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  background-color: var(--white);
 }
 
 h1,
@@ -101,6 +112,30 @@ figure {
 .btn-main:hover {
   background-color: var(--white);
   color: var(--primary-clr);
+}
+
+/*  */
+.theme-toggle {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  border-radius: 0;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.theme-toggle .fa-moon,
+.theme-toggle .fa-sun {
+  width: 1.1rem;
+  text-align: center;
+  color: var(--black);
+}
+
+/* Accessible focus outline */
+.theme-toggle:focus {
+  outline: 3px solid rgba(100, 150, 255, 0.25);
+  outline-offset: 2px;
 }
 
 /* site-header */
