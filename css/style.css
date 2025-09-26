@@ -414,11 +414,22 @@ ul.hero-bredcrums li {
   transform: translateY(0);
 }
 
-.actor-name {
-  color: var(--black, #000);
-  font: 600 18px/1.2 var(--font-family-p1, sans-serif);
+.actor-card-text {
   padding: 14px;
   text-align: center;
+}
+
+.actor-name {
+  color: var(--black, #000);
+  font: 600 18px/1.2 var(--font-family-p1);
+  margin-bottom: 5px;
+
+}
+
+.actor-card-text p {
+  color: var(--black, #000);
+  font: 500 12px/1.2 var(--font-family-p2);
+  margin: 0;
 }
 
 /*  */
@@ -465,6 +476,7 @@ ul.hero-bredcrums li {
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: top center;
+  border-radius: 10px;
 }
 
 .gallery video {
@@ -472,6 +484,7 @@ ul.hero-bredcrums li {
   height: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .gallery .video-overlay {
@@ -509,18 +522,25 @@ ul.hero-bredcrums li {
 }
 
 .custom-tabs {
-  padding: 0;
+  padding: 8px;
   border: 0;
   gap: 5px;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  width: auto;
+  align-items: center;
+  background-color: var(--white);
+  border: 1px solid #d1d1d1;
 }
 
 .custom-tabs li button {
   padding: 10px 20px !important;
   border: 0 !important;
-  background-color: var(--black);
+  background-color: transparent;
   border-radius: 5px !important;
-  color: var(--white);
+  color: var(--black);
 
 }
 
@@ -528,6 +548,13 @@ ul.hero-bredcrums li {
 .custom-tabs li button:hover {
   background-color: var(--primary-clr) !important;
   color: var(--white) !important;
+}
+
+.custom-tabs-content {
+  padding: 50px 20px 20px;
+  border-radius: 10px;
+  border: 1px solid #d1d1d1;
+  margin-top: -30px;
 }
 
 .dt-card {
@@ -574,6 +601,7 @@ ul.hero-bredcrums li {
   font-size: 0.95rem;
   color: var(--black);
   border-bottom: 1px solid #00000040;
+  text-align: start;
 }
 
 .dt-card p:last-child {
@@ -599,8 +627,16 @@ ul.hero-bredcrums li {
   border-radius: 10px;
   border: 1px solid #ebe6e7;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-align: start;
 }
 
+.contact-form label {
+  text-align: start;
+  font: 400 16px/1.2 var(--font-family-p2);
+}
+.contact-form input{
+  text-align: start;
+}
 .masonry-gl {
   padding: 20px;
 

@@ -26,7 +26,7 @@
 
 <body>
   <!-- Header -->
- <header class="site-header">
+  <header class="site-header">
     <nav class="navbar navbar-expand-md" aria-label="Fourth navbar example">
       <div class="container">
         <a class="navbar-brand" href="/index.html">
@@ -58,10 +58,10 @@
           </ul>
           <div class="button-wrap">
             <a href="javascript:void(0)" class="btn-main">Login</a>
-                   <button id="themeToggle" class="btn btn-sm theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
-          <i id="themeIcon" class="fa-solid fa-moon"></i>
-          <span id="themeLabel" class="visually-hidden">Toggle theme</span>
-        </button>
+            <button id="themeToggle" class="btn btn-sm theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+              <i id="themeIcon" class="fa-solid fa-moon"></i>
+              <span id="themeLabel" class="visually-hidden">Toggle theme</span>
+            </button>
           </div>
         </div>
       </div>
@@ -150,7 +150,7 @@
         <!-- Right side video -->
         <div class="col-lg-6">
           <a data-fancybox="gallery" href="https://www.w3schools.com/html/mov_bbb.mp4" class="video-overlay">
-            <video>
+            <video poster="./images/banner.jpg">
               <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
               Your browser does not support HTML video.
             </video>
@@ -164,89 +164,94 @@
   <section class="dt-info">
     <div class="container">
       <!-- Tabs -->
-      <ul class="nav nav-tabs custom-tabs" id="actorTabs" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about"
-            type="button">About Me</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery"
-            type="button">Gallery</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button">Contact
-            Us</button>
-        </li>
-      </ul>
-      <!-- Tab Content -->
-      <div class="tab-content custom-tabs-content" id="actorTabsContent">
-        <!-- About Me -->
-        <div class="tab-pane fade show active about-section" id="about" role="tabpanel">
-          <div class="row g-4">
-            <!-- General Information -->
-            <div class="col-md-6">
-              <div class="dt-card">
-                <h5><i class="fa-solid fa-user"></i> General Information</h5>
-                <p><strong>Full Name:</strong> Juana Stewart</p>
-                <p><strong>Nationality:</strong> United States</p>
-                <p><strong>Location:</strong> New York, NY</p>
-                <p><strong>Languages:</strong> English, Spanish, French</p>
-                <p><strong>Website:</strong> <a href="https://www.juanastewart.com"
-                    target="_blank">www.juanastewart.com</a></p>
-                <p><strong>Age:</strong> 28 years old</p>
+      <div class="text-center">
+        <ul class="nav nav-tabs custom-tabs" id="actorTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button">
+              <i class="fa-solid fa-user me-2"></i> About Me
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button">
+              <i class="fa-solid fa-image me-2"></i> Gallery
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button">
+              <i class="fa-solid fa-envelope me-2"></i> Contact Us
+            </button>
+          </li>
+        </ul>
+        <!-- Tab Content -->
+        <div class="tab-content custom-tabs-content" id="actorTabsContent">
+          <!-- About Me -->
+          <div class="tab-pane fade show active about-section" id="about" role="tabpanel">
+            <div class="row g-4">
+              <!-- General Information -->
+              <div class="col-md-6">
+                <div class="dt-card">
+                  <h5><i class="fa-solid fa-user"></i> General Information</h5>
+                  <p><strong>Full Name:</strong> Juana Stewart</p>
+                  <p><strong>Nationality:</strong> United States</p>
+                  <p><strong>Location:</strong> New York, NY</p>
+                  <p><strong>Languages:</strong> English, Spanish, French</p>
+                  <p><strong>Website:</strong> <a href="https://www.juanastewart.com"
+                      target="_blank">www.juanastewart.com</a></p>
+                  <p><strong>Age:</strong> 28 years old</p>
+                </div>
               </div>
-            </div>
-            <!-- Physical Attributes -->
-            <div class="col-md-6">
-              <div class="dt-card">
-                <h5><i class="fa-solid fa-dumbbell"></i> Physical Attributes</h5>
-                <p><strong>Height:</strong> 5'8" (173 cm)</p>
-                <p><strong>Measurements:</strong> 36-26-36</p>
-                <p><strong>Dress Size:</strong> US 4 / EU 36</p>
-                <p><strong>Shoe Size:</strong> US 8 / EU 39</p>
-                <p><strong>Hair Color:</strong> Dark Brown</p>
-                <p><strong>Eye Color:</strong> Hazel</p>
-                <p><strong>Build:</strong> Athletic</p>
+              <!-- Physical Attributes -->
+              <div class="col-md-6">
+                <div class="dt-card">
+                  <h5><i class="fa-solid fa-dumbbell"></i> Physical Attributes</h5>
+                  <p><strong>Height:</strong> 5'8" (173 cm)</p>
+                  <p><strong>Measurements:</strong> 36-26-36</p>
+                  <p><strong>Dress Size:</strong> US 4 / EU 36</p>
+                  <p><strong>Shoe Size:</strong> US 8 / EU 39</p>
+                  <p><strong>Hair Color:</strong> Dark Brown</p>
+                  <p><strong>Eye Color:</strong> Hazel</p>
+                  <p><strong>Build:</strong> Athletic</p>
+                </div>
               </div>
+
             </div>
 
           </div>
-
-        </div>
-        <!-- Gallery -->
-        <div class="tab-pane fade" id="gallery" role="tabpanel">
-          <div class="masonry-gl">
-            <img src="./images/actor-img1.png" alt="">
-            <img src="./images/actor-img2.png" alt="">
-            <img src="./images/actor-img4.png" alt="">
-            <img src="./images/actor-img5.png" alt="">
-            <img src="./images/actor-img6.png" alt="">
-            <img src="./images/actor-img8.png" alt="">
-            <img src="./images/actor-img9.webp" alt="">
-            <img src="./images/actor-img10.png" alt="">
+          <!-- Gallery -->
+          <div class="tab-pane fade" id="gallery" role="tabpanel">
+            <div class="masonry-gl">
+              <img src="./images/actor-img1.png" alt="">
+              <img src="./images/actor-img2.png" alt="">
+              <img src="./images/actor-img4.png" alt="">
+              <img src="./images/actor-img5.png" alt="">
+              <img src="./images/actor-img6.png" alt="">
+              <img src="./images/actor-img8.png" alt="">
+              <img src="./images/actor-img9.webp" alt="">
+              <img src="./images/actor-img10.png" alt="">
+            </div>
           </div>
-        </div>
-        <!-- Contact -->
-        <div class="tab-pane fade" id="contact" role="tabpanel">
-          <form class="contact-form">
-            <div class="mb-3">
-              <label for="name">Your Name (required)</label>
-              <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="mb-3">
-              <label for="email">Your Email (required)</label>
-              <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="subject">Subject</label>
-              <input type="text" class="form-control" id="subject">
-            </div>
-            <div class="mb-3">
-              <label for="message">Your Message</label>
-              <textarea class="form-control" id="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Send Message</button>
-          </form>
+          <!-- Contact -->
+          <div class="tab-pane fade" id="contact" role="tabpanel">
+            <form class="contact-form">
+              <div class="mb-3">
+                <label for="name">Your Name (required)</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email">Your Email (required)</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject">
+              </div>
+              <div class="mb-3">
+                <label for="message">Your Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn-main">Send Message</button>
+            </form>
+          </div>
         </div>
       </div>
   </section>
