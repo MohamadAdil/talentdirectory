@@ -1,4 +1,5 @@
 :root {
+  --primary-clr: #f97316;
   --black: #000;
   --white: #fff;
   --font-family-p1: "Inter", sans-serif;
@@ -82,3 +83,236 @@ figure {
 }
 
 /*  */
+.btn-main {
+  display: inline-block;
+  background-color: var(--primary-clr);
+  color: var(--white);
+  font: 400 16px/1.2 var(--font-family-p1);
+  text-transform: capitalize;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-clr);
+  transition: all ease 0.5s;
+}
+
+.btn-main:hover {
+  background-color: var(--white);
+  color: var(--primary-clr);
+}
+
+/*  */
+.site-header {
+  padding: 10px 0;
+  background-color: var(--white);
+}
+
+.navbar-brand img {
+  object-fit: contain;
+  max-width: 180px;
+}
+
+.site-header .navbar-nav {
+  gap: 30px;
+}
+
+.site-header .navbar-nav li a {
+  font: 400 16px/1.2 var(--font-family-p1);
+  color: var(--black);
+  padding: 0 !important;
+  margin: 0 !important;
+  text-transform: capitalize;
+}
+
+.site-header .navbar-nav li a.active,
+.site-header .navbar-nav li a:hover {
+  color: var(--primary-clr);
+}
+
+/*  */
+
+.actors-listing-sc {
+  padding: 60px 0;
+
+}
+
+.actors-listing-sc h2 {
+  color: var(--black);
+  font: 700 42px/1.2 var(--font-family-p1);
+  text-transform: capitalize;
+}
+
+.actor-card {
+  text-align: center;
+}
+
+.actor-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.actor-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+  aspect-ratio: 230 / 300;
+  object-fit: cover;
+  object-position: center;
+}
+
+.actor-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: var(--white);
+  padding: 15px;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s ease;
+}
+
+.actor-card-content li {
+  font: 400 14px/1.2 var(--font-family-p1);
+}
+
+.actor-img:hover img {
+  transform: scale(1.05);
+}
+
+.actor-img:hover .actor-card-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.actor-name a {
+  color: var(--black);
+  font: 600 18px/1.2 var(--font-family-p1);
+}
+
+/*  */
+.hero-banner {
+  padding: 60px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-banner::before {
+  content: '';
+  inset: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000054;
+  z-index: -1;
+}
+
+.hero-banner .row {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+}
+
+.hero-img {
+  margin-bottom: -100px;
+}
+
+.hero-img img {
+  aspect-ratio: 390/400;
+  object-fit: cover;
+  object-position: center;
+}
+
+.social-icons {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 12px;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons li a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 16px;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons li a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Custom Colors */
+.social-icons .facebook {
+  background: #3b5998;
+}
+
+.social-icons .twitter {
+  background: #1da1f2;
+}
+
+.social-icons .instagram {
+  background: #833AB4;
+}
+
+.social-icons .youtube {
+  background: #FFB400;
+}
+
+.social-icons .link {
+  background: var(--black);
+}
+
+/*  */
+.fe-galary {
+  padding: 100px 0 60px;
+  background-color: var(--white);
+}
+
+.fe-galary h2 {
+  color: var(--black);
+  font: 700 42px/1.2 var(--font-family-p1);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.hd-span {
+  color: var(--black);
+  font: 600 14px/1.2 var(--font-family-p1);
+  text-transform: capitalize;
+  opacity: 0.6;
+}
+
+/*  */
+.site-footer {
+  text-align: center;
+  padding: 50px 0;
+  background: var(--black);
+}
+
+.site-footer h2 {
+  color: var(--white);
+  font: 600 20px/1.2 var(--font-family-p1);
+  text-transform: capitalize;
+  margin: 0 0 20px;
+}
+
+.site-footer p {
+  font: 400 16px/1.2 var(--font-family-p1);
+  color: var(--white);
+}
